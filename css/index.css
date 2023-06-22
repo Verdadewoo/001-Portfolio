@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Work+Sans&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+html, body{
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.part1{
+  background-color: #49A078;
+  height: 100dvh;
+}
+
+.part2{
+  background-color: #1F2421;
+}
+
+.part3{
+  background-color: #1F2421;
+  height: 100vh;
+}
+
+.part4{
+  background-color: #1F2421;
+  height: fit-content;
+}
+
+.part5{
+  background-color: #1F2421;
+  height: 60vh;
+}
+
+.part6{
+  background-color: black;
+  height: 100vh;
+}
+
+footer{
+  background-color: #9CC5A1;
+  height: 30vh;
+}
+
+.text-subtitle{
+  color: #49A078;
+}
+
+.text-bot{
+  color: #9CC5A1;
+}
+
+.btn{
+  background-color: #9CC5A1;
+}
+
+.btn:hover{
+  background-color: #49A078;
+}
+
+.nav-items{
+  position: relative;
+}
+
+.nav-items:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #32383d;
+  transition: width .3s;
+}
+
+.nav-items:hover:before {
+  width: 100%;
+}
+
+.card{
+  background-color: #1F2421;
+  border-color: transparent;
+  transition: all 0.2s;
+}
+
+.card:hover{
+  border-color:#49A078;
+}
+
+.icon-right{
+  margin-top: -1rem;
+  opacity: 0;
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+
+.card:hover .icon-right{
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.nav-link{
+  background-color: #2B322E;
+  transition: all 0.2s;
+}
+
+.nav-link:hover{
+  transform: scale(1.01);
+  background-color: #49574f;
+}
+
+.nav-link:hover .invert-image{
+  transform: rotate(0deg);
+}
+
+.invert-image{
+  filter: invert(100%);
+  width: 5rem;
+  transition: all 0.2s;
+  transform: rotate(5deg);
+}
+
+.btn-link{
+  display: block;
+}
+
+.btn-1{
+  transition: all 0.2s;
+}
+
+.btn-1:hover{
+  transform: scale(1.1);
+  color: white;
+}
+
+.scribble-1{
+  pointer-events: none;
+  margin-bottom: 3rem;
+  animation-name: hover;
+  animation: hover 25s ease-in-out infinite;
+}
+
+.scribble-2{
+  pointer-events: none;
+  width: 10rem;
+  opacity: 0.3;
+  top: 0;
+  right: 0;
+  margin-top: -1rem;
+  animation-name: hover;
+  animation: hover 10s ease-in-out infinite;
+}
+
+.scribble-3{
+  pointer-events: none;
+  width: 10rem;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  margin-top: -1rem;
+  animation-name: hover;
+  animation: hover 12s ease-in-out infinite;
+}
+
+.scribble-4{
+  pointer-events: none;
+  width: 10rem;
+  opacity: 0.3;
+  bottom: 0;
+  right: 0;
+  animation-name: hover;
+  animation: hover 15s ease-in-out infinite;
+}
+
+.scribble-5{
+  pointer-events: none;
+  width: 6rem;
+  opacity: 0.3;
+  bottom: 0;
+  left: 0;
+  margin-left: 3rem;
+  animation-name: hover;
+  animation: hover 20s ease-in-out infinite;
+}
+.scribble-6{
+  z-index: 0;
+  pointer-events: none;
+  width: 30rem;
+  opacity: 0.1;
+  top: 0;
+  right: 0;
+  margin-right: -10rem;
+  animation-name: spin;
+  animation: spin 100s ease-in-out infinite;
+}
+
+.scribble-7{
+  width: 4rem;
+  right: 0;
+  margin-right: -5rem;
+  transform: rotate(-5deg);
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.scribble-8{
+  width: 4rem;
+  left: 0;
+  margin-top: -1rem;
+  margin-left: -5rem;
+  transform: rotate(-5deg);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.btn-container:hover > img{
+  transform: rotate(5deg);
+  opacity: 0.3;
+}
+
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+@keyframes hover {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(5px, -10px) rotate(3deg);
+  }
+
+  40% {
+    transform: translate(-5px, 10px) rotate(-3deg);
+  }
+
+  60% {
+    transform: translate(5px, -10px) rotate(3deg);
+  }
+
+  80% {
+    transform: translate(-5px, 10px) rotate(-3deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+
+}
+
+/* Media query for tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
