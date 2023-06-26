@@ -154,6 +154,11 @@ footer{
   color: white;
 }
 
+.showcase{
+  aspect-ratio: auto 16/9;
+  background-size: cover;
+}
+
 .scribble-1{
   pointer-events: none;
   margin-bottom: 3rem;
