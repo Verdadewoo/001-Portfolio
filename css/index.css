@@ -98,6 +98,10 @@ footer{
   width: 100%;
 }
 
+.hide-card{
+  visibility: hidden;
+}
+
 .card{
   background-color: #1F2421;
   border-color: transparent;
